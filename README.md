@@ -11,9 +11,10 @@ You will need to create a [GitHub Personal Access Token](https://github.com/sett
 ## Usage
 
 ```bash
-module "terraform-github-repository" {
-  source  = "terraform-github-repository"
+module "repository" {
+  source  = "mrlesmithjr/repository/github"
   version = "0.1.0"
+  # insert the 2 required variables here
 }
 ```
 
