@@ -1,15 +1,3 @@
-variable "github_individual" {
-  type        = bool
-  description = "Run outside an organization. When individual is true, the provider will run outside the scope of an organization."
-  default     = false
-}
-
-variable "github_organization" {
-  type        = string
-  description = "This is the target GitHub organization to manage"
-  default     = ""
-}
-
 variable "repo_auto_init" {
   type        = bool
   description = "Set to true to produce an initial commit in the repository"
@@ -42,8 +30,15 @@ variable "repo_name" {
 variable "repo_private" {
   type        = bool
   description = "Set to true to create a private repository"
-  default     = false
+  default     = true
 }
+
+variable "repo_visibility" {
+  type        = string
+  description = "Can be public or private. The visibility parameter overrides the private parameter"
+  default     = "private"
+}
+
 
 variable "github_token" {
   type        = string

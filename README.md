@@ -20,17 +20,16 @@ module "repository" {
 
 ## Inputs
 
-| Name                | Description                                                                                                      | Default | Required |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------- | :-----: | :------: |
-| github_individual   | Run outside an organization. When individual is true, the provider will run outside the scope of an organization |  false  |    no    |
-| github_organization | This is the target GitHub organization to manage                                                                 |    -    |    no    |
-| github_token        | This is the GitHub personal access token                                                                         |    -    |   yes    |
-| repo_auto_init      | Set to true to produce an initial commit in the repository                                                       |  false  |    no    |
-| repo_description    | A description of the repository                                                                                  |    -    |    no    |
-| repo_has_issues     | Set to true to enable the GitHub Issues features on the repository                                               |  true   |    no    |
-| repo_has_wiki       | Set to true to enable the GitHub Wiki features on the repository                                                 |  true   |    no    |
-| repo_name           | The name of the repository                                                                                       |    -    |   yes    |
-| repo_private        | Set to true to create a private repository                                                                       |  false  |    no    |
+| Name             | Description                                                                        | Default | Required |
+| ---------------- | ---------------------------------------------------------------------------------- | :-----: | :------: |
+| github_token     | This is the GitHub personal access token                                           |    -    |   yes    |
+| repo_auto_init   | Set to true to produce an initial commit in the repository                         |  false  |    no    |
+| repo_description | A description of the repository                                                    |    -    |    no    |
+| repo_has_issues  | Set to true to enable the GitHub Issues features on the repository                 |  true   |    no    |
+| repo_has_wiki    | Set to true to enable the GitHub Wiki features on the repository                   |  true   |    no    |
+| repo_name        | The name of the repository                                                         |    -    |   yes    |
+| repo_private     | Set to true to create a private repository                                         |  false  |    no    |
+| repo_visibility  | Can be public or private. The visibility parameter overrides the private parameter | private |    no    |
 
 ## Outputs
 

@@ -1,9 +1,7 @@
 # Configure the GitHub Provider
 provider "github" {
-  individual   = var.github_individual
-  token        = var.github_token
-  organization = var.github_organization
-  version      = "~> 2.8"
+  token   = var.github_token
+  version = "~> 2.9"
 }
 
 resource "github_repository" "repo" {
@@ -12,5 +10,5 @@ resource "github_repository" "repo" {
   has_issues  = var.repo_has_issues
   has_wiki    = var.repo_has_wiki
   name        = var.repo_name
-  private     = var.repo_private
+  visibility  = var.repo_visibility
 }
