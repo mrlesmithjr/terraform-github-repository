@@ -1,3 +1,12 @@
+commit d59c9fd70d9ecd7e62c9bb1c09336604386b4e51
+Author: Larry Smith Jr <mrlesmithjr@gmail.com>
+Date:   Wed Jul 1 07:52:16 2020 -0400
+
+    Updated to resolve issue with creating personal repos
+    
+    The latest provider version 2.90 now fixes the previous issue where only
+    repos for organizations could be created.
+
 commit ac97c2e0c945b7ae2aed7f491225363800ed4246
 Author: Larry Smith Jr <mrlesmithjr@gmail.com>
 Date:   Mon Jun 29 00:00:04 2020 -0400
